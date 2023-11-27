@@ -1,0 +1,462 @@
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <!--Bootstrap CSS link-->
+    <link
+      href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css"
+      rel="stylesheet"
+      integrity="sha384-T3c6CoIi6uLrA9TneNEoa7RxnatzjcDSCmG1MXxSR1GAsXEV/Dwwykc2MPK8M2HN"
+      crossorigin="anonymous"
+    />
+    <!--CSS Link-->
+    <link rel="stylesheet" href="./CSS/style.css" />
+
+    <!--Font Awsome CDN-->
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.2/css/all.min.css"
+    />
+    <!--AOS CSS-->
+    <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet" />
+    <title>Document</title>
+  </head>
+
+  <body>
+    <!--scroll to top button-->
+    <button id="scrollToTopBtn" onclick="scrollToTop()">
+      <i class="fa-solid fa-arrow-up"></i>
+    </button>
+
+    <!--====================================================== Navbar ===================================================-->
+
+    <nav
+      class="navbar navbar-expand-lg navbar-light bg-light px-3 d-flex fixed-top"
+    >
+      <a class="navbar-brand ds">
+        <h2 class="text-black">
+          Frontend<span style="color: #22cfb8">Internship</span>
+        </h2>
+      </a>
+      <a class="navbar-brand mb">
+        <h2 class="text-black">F<span style="color: #22cfb8">I</span></h2>
+      </a>
+      <button
+        class="navbar-toggler nav-bar"
+        type="button"
+        data-bs-toggle="collapse"
+        data-bs-target="#navbarSupportedContent"
+        aria-controls="navbarSupportedContent"
+        aria-expanded="false"
+        aria-label="Toggle navigation"
+      >
+        <i class="fa-solid fa-bars-staggered"></i>
+      </button>
+
+      <div class="collapse navbar-collapse" id="navbarSupportedContent">
+        <ul class="navbar-nav mx-auto">
+          <li class="nav-item">
+            <a class="nav-link" href="#">Home</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="#">About</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="#feaures">Features</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="#testimonials">Testimonials</a>
+          </li>
+        </ul>
+
+        <!-- Close button for mobile -->
+        <button
+          class="navbar-toggler close d-lg-none"
+          type="button"
+          data-bs-toggle="collapse"
+          data-bs-target="#navbarSupportedContent"
+          aria-controls="navbarSupportedContent"
+          aria-expanded="false"
+          aria-label="Close navigation"
+        >
+          <i class="fa-solid fa-times"></i>
+        </button>
+      </div>
+
+      <form class="search">
+        <input
+          type="text"
+          id="search"
+          class="search__input text-white"
+          placeholder="Search...."
+        />
+        <button type="button" class="search__button">
+          <i class="fa-solid fa-magnifying-glass" style="color: #ffffff"></i>
+        </button>
+      </form>
+    </nav>
+
+    <!--====================================================== Hero Section ===================================================-->
+
+    <div class="container-fluid hero align-item-center">
+      <div class="container mt-5">
+        <div class="row">
+          <div
+            class="col-xl-6 mt-5"
+            data-aos="zoom-in-up"
+            data-aos-duration="2000"
+          >
+            <h1 class="h1">We Empower you to find the right career path</h1>
+            <h2 class="h2">
+              Join the Virtual Internship Program in emerging technologies with
+              CodeClause
+            </h2>
+            <a href="#" class="btn-get-started">Apply Now</a>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <!--====================================================== Hero Section end ===================================================-->
+
+    <!--====================================================== Counts Section ===================================================-->
+
+    <div class="container-fluid counts">
+      <div class="container">
+        <div class="row">
+          <div
+            class="col-md-3 col-lg-6"
+            data-aos="fade-up"
+            data-aos-duration="2000"
+          >
+            <div class="count-box">
+              <i class="fa-regular fa-face-smile"></i>
+              <span id="count1" class="precounter"></span>
+              <p>Happy Interns</p>
+            </div>
+          </div>
+          <div
+            class="col-md-3 col-lg-6 mt-5 mt-md-0"
+            data-aos="fade-up"
+            data-aos-duration="2000"
+          >
+            <div class="count-box">
+              <i class="fa-solid fa-chalkboard-user"></i>
+              <span id="count2" class="precounter"></span>
+              <p>Mentors</p>
+            </div>
+          </div>
+          <div
+            class="col-md-3 col-lg-6 mt-5 mt-md-0"
+            data-aos="fade-up"
+            data-aos-duration="2000"
+          >
+            <div class="count-box">
+              <i class="fa-solid fa-users"></i>
+              <span id="count3" class="precounter"></span>
+              <p>Interns</p>
+            </div>
+          </div>
+          <div
+            class="col-md-3 col-lg-6 mt-5 mt-md-0"
+            data-aos="fade-up"
+            data-aos-duration="2000"
+          >
+            <div class="count-box">
+              <i class="fa-solid fa-headphones"></i>
+              <span id="count4" class="precounter"></span>
+              <p>Hours Support</p>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <!--====================================================== Features Section ===================================================-->
+
+    <div
+      class="heading1 text-center mt-5"
+      data-aos="fade-up"
+      data-aos-duration="2000"
+      id="features"
+    >
+      <h1 class="thick-underline2">Features</h1>
+    </div>
+    <div class="container-fluid features mt-5">
+      <div class="container mt-5 pt-5">
+        <div class="row mt-5 pt-5 px-2">
+          <div
+            class="col-md-4 mt-5"
+            data-aos="fade-up"
+            data-aos-duration="2000"
+          >
+            <div class="text-center feat-box">
+              <i class="fa-regular fa-newspaper"></i>
+              <p class="">Get Certified</p>
+              <div class="feat-para py-2">
+                Get certified in your intrested domain with CodeClause
+                Internship Program.
+              </div>
+            </div>
+          </div>
+          <div
+            class="col-md-4 mt-5"
+            data-aos="fade-up"
+            data-aos-duration="2000"
+          >
+            <div class="text-center feat-box">
+              <i class="fa-solid fa-user"></i>
+              <p class="">Trained by Experts</p>
+              <div class="feat-para py-2">
+                Get training by experts during internship period and
+                consultancy.
+              </div>
+            </div>
+          </div>
+          <div
+            class="col-md-4 mt-5"
+            data-aos="fade-up"
+            data-aos-duration="2000"
+          >
+            <div class="text-center feat-box">
+              <i class="fa-regular fa-envelope-open"></i>
+              <p class="">Explore Opportunities</p>
+              <div class="feat-para py-2">
+                Explore Opportunities by CodeClause and get rewarded with Swags.
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+    <!--====================================================== Testimonial Section ===================================================-->
+    <div
+      class="heading1 text-center mt-5"
+      data-aos="fade-up"
+      data-aos-duration="2000"
+      id="technologies"
+    >
+      <h1 class="thick-underline2">Testimonials</h1>
+      <p class="pt-2">What people says about internship program</p>
+    </div>
+    <div class="container-fluid testimonial mt-5">
+      <div class="container">
+        <div class="row">
+          <div class="col-md-4" data-aos="fade-up" data-aos-duration="2000">
+            <div class="testimonial-wrap d-flex">
+              <div class="testimonial-item">
+                <div class="row">
+                  <div class="col-md-4">
+                    <img
+                      src="https://internship.codeclause.com/assets/img/testimonials/testimonials-1.jpeg"
+                      alt="testimonial img"
+                      class="img-fluid"
+                    />
+                  </div>
+                  <div class="col-md-8">
+                    <h3>Isha Parul</h3>
+                    <h4>CodeClause Intern</h4>
+                  </div>
+
+                  <p>
+                    <i class="fa-solid fa-quote-left"></i> Lorem ipsum, dolor
+                    sit amet consectetur adipisicing elit. Vero aspernatur
+                    obcaecati nobis sequi ea repudiandae corrupti, veritatis
+                    commodi tenetur dolore impedit. Ratione fugiat ipsam nisi
+                    facere asperiores id, laborum est!
+                    <i class="fa-solid fa-quote-right"></i>
+                  </p>
+                </div>
+              </div>
+            </div>
+          </div>
+          <div class="col-md-4" data-aos="fade-up" data-aos-duration="2000">
+            <div class="testimonial-wrap d-flex">
+              <div class="testimonial-item">
+                <div class="row">
+                  <div class="col-md-4">
+                    <img
+                      src="https://internship.codeclause.com/assets/img/testimonials/testimonials-2.jpg"
+                      alt="testimonial img"
+                      class="img-fluid"
+                    />
+                  </div>
+                  <div class="col-md-8">
+                    <h3>Samiksha Madhukar</h3>
+                    <h4>CodeClause Intern</h4>
+                  </div>
+
+                  <p>
+                    <i class="fa-solid fa-quote-left"></i> Lorem ipsum, dolor
+                    sit amet consectetur adipisicing elit. Vero aspernatur
+                    obcaecati nobis sequi ea repudiandae corrupti, veritatis
+                    commodi tenetur dolore impedit. Ratione fugiat ipsam nisi
+                    facere asperiores id, laborum est!
+                    <i class="fa-solid fa-quote-right"></i>
+                  </p>
+                </div>
+              </div>
+            </div>
+          </div>
+          <div class="col-md-4" data-aos="fade-up" data-aos-duration="2000">
+            <div class="testimonial-wrap d-flex">
+              <div class="testimonial-item">
+                <div class="row">
+                  <div class="col-md-4">
+                    <img
+                      src="https://internship.codeclause.com/assets/img/testimonials/testimonials-4.jpeg"
+                      alt="testimonial img"
+                      class="img-fluid"
+                    />
+                  </div>
+                  <div class="col-md-8">
+                    <h3>Ajit Sachin Patil</h3>
+                    <h4>CodeClause Intern</h4>
+                  </div>
+
+                  <p>
+                    <i class="fa-solid fa-quote-left"></i> Lorem ipsum, dolor
+                    sit amet consectetur adipisicing elit. Vero aspernatur
+                    obcaecati nobis sequi ea repudiandae corrupti, veritatis
+                    commodi tenetur dolore impedit. Ratione fugiat ipsam nisi
+                    facere asperiores id, laborum est!
+                    <i class="fa-solid fa-quote-right"></i>
+                  </p>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <!--====================================================== Footer Section ===================================================-->
+
+    <footer class="container-fluid footer pb-3">
+      <div class="container">
+        <div class="row pt-5">
+          <div class="col-md-3 text-center">
+            <h2 class="text-white my-5">
+              Frontend<span style="color: #22cfb8">Internship</span>
+            </h2>
+          </div>
+          <div class="col-md-3">
+            <div class="footer-links">
+              <h4>About Us</h4>
+
+              <ul class="link-list">
+                <li>
+                  <i class="fa-solid fa-chevron-right"></i>
+                  <a href="">Internship Program Highlights</a>
+                </li>
+                <li>
+                  <i class="fa-solid fa-chevron-right"></i>
+                  <a href="">Career Development</a>
+                </li>
+                <li>
+                  <i class="fa-solid fa-chevron-right"></i>
+                  <a href="">Community Involvement</a>
+                </li>
+                <li>
+                  <i class="fa-solid fa-chevron-right"></i>
+                  <a href="">Application Process</a>
+                </li>
+              </ul>
+            </div>
+          </div>
+          <div class="col-md-3">
+            <div class="footer-links">
+              <h4>Contact</h4>
+
+              <ul class="link-list">
+                <li>
+                  <i class="fa-solid fa-chevron-right"></i>
+                  <a href="">Contact Form</a>
+                </li>
+                <li>
+                  <i class="fa-solid fa-chevron-right"></i>
+                  <a href="">frontendinternship@gmail.com</a>
+                </li>
+                <li>
+                  <i class="fa-solid fa-chevron-right"></i>
+                  <a href="">Chat Support</a>
+                </li>
+                <li>
+                  <i class="fa-solid fa-chevron-right"></i>
+                  <a href="">Newsletter Subscription</a>
+                </li>
+                <li>
+                  <i class="fa-solid fa-chevron-right"></i>
+                  <a href="">Feedback Form</a>
+                </li>
+              </ul>
+            </div>
+          </div>
+          <div class="col-md-3">
+            <div class="footer-links">
+              <h4>Terms of Services</h4>
+
+              <ul class="link-list">
+                <li>
+                  <i class="fa-solid fa-chevron-right"></i>
+                  <a href="">Privacy Policy</a>
+                </li>
+                <li>
+                  <i class="fa-solid fa-chevron-right"></i>
+                  <a href="">Payment and Refund Policies</a>
+                </li>
+                <li>
+                  <i class="fa-solid fa-chevron-right"></i>
+                  <a href="">User Account and Registration</a>
+                </li>
+                <li>
+                  <i class="fa-solid fa-chevron-right"></i>
+                  <a href="">Cancellation Policies</a>
+                </li>
+              </ul>
+            </div>
+          </div>
+        </div>
+      </div>
+    </footer>
+
+    <!--====================================================== Copyright Section ===================================================-->
+    <div class="container-fluid copyright">
+      <div class="container pt-4">
+        <div class="row">
+          <div class="col-md-4 text-white">
+            <div>
+              © Copyright<b> Frontend Internship</b>.All Rights Reserved
+            </div>
+
+            <p class="mx-2">
+              Designed by
+              <span style="color: #22cfb8"> Saksham Shrivastava</span>
+            </p>
+          </div>
+          <div class="col-md-4"></div>
+          <div class="col-md-4 social-icons">
+            <i class="fa-brands fa-square-whatsapp"></i>
+            <i class="fa-brands fa-square-facebook"></i>
+            <i class="fa-brands fa-square-instagram"></i>
+            <i class="fa-brands fa-linkedin"></i>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <!--Main.js-->
+    <script src="./JavaScript/main.js"></script>
+    <!--Bootstrap Script link-->
+    <script
+      src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js"
+      integrity="sha384-C6RzsynM9kWDrMNeT87bh95OGNyZPhcTNXj1NW7RuBCsyN/o0jlpcV8Qyq46cDfL"
+      crossorigin="anonymous"
+    ></script>
+    <!--AOS JS-->
+    <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+    <script>
+      AOS.init();
+    </script>
+  </body>
+</html>
