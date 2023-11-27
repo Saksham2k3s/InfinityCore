@@ -1,4 +1,4 @@
-### Web Development Asseignment By Saksham Shrivastava
+### Web Development Assignment By Saksham Shrivastava
 
 > Completed web development assessment by Saksham Shrivastava.
 
